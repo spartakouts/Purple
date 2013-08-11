@@ -1,6 +1,5 @@
-# One Month Rails
+# Ruby is completely on the Rails here.
 
-This is the sample application for
-[*One Month Rails: Teach Yourself to Code like a baller*](www.google.com)
+This is the first full end to end rails application I have created.  It is a work in progress
 
 by [Alex Kouts](www.twitter.com/akouts)
