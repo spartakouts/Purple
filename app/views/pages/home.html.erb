@@ -1,15 +1,64 @@
 <% if user_signed_in? %>
 	<h1> Your'e Logged in! </h1>
 <% else %>
-<div class="hero-unit">
-	<h1>Welcome to the Thunderdome</h1>
-	<p>
-		you found the homepage dood
-		<%= link_to "My About.me Page", "http://about.me/alex.k" %>
-		thingies.
-	</p>
-	<p>
-		<%= link_to "Sign up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
-	</p>
-</div>
+<!--  Carousel - consult the Twitter Bootstrap docs at
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img src="http://www.bigislandventures.com/wp-content/uploads/2011/12/IMG_0749_web-1200x480.jpg" alt="" />
+      <div class="carousel-caption">
+        <p>This is the first caption of the day</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://www.houseintossa.com/wp-content/uploads/2013/01/Tossa01225-1-1200x480.jpg" alt="" />
+      <div class="carousel-caption">
+        <p>This is the second caption of the day</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://pegasus.terrassl.net/~wwwshoeb/wp-content/uploads/2012/12/pano_todtownhall_entrance_1500px-1200x480.jpg" alt="" />
+      <div class="carousel-caption">
+        <p>This is the third caption of the day</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://snow-reports.ca/sites/default/files/field/image/1200x480x20121227-Snow-Reports.ca-1984_header_lg.jpg.pagespeed.ic.1PPrcH8KbZ.jpg" alt="" />
+      <div class="carousel-caption">
+        <p>This is the fourth caption of the day</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+
 <% end %>
+
+<div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 160px; height: 160px;" src="http://o.homedsgn.com/wp-content/uploads/2012/03/Marcus-Beach-Home-01-140x140.jpg">
+          <h2>Beach House</h2>
+          <p>This is placeholder text.  I am aware that it is placeholder text but I feel as though I am less conflicted about the fact that it is than I thought I would be.  All things in the universe are placeholder text.</p>
+          <p><a class="btn" href="#">See House »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 160px; height: 160px;" src="http://southcoasthomes.blog.ocregister.com/files/2011/04/DP.35057beach11-140x140.jpg">
+          <h2>Mountain House</h2>
+          <p>This is placeholder text.  I am aware that it is placeholder text but I feel as though I am less conflicted about the fact that it is than I thought I would be.  All things in the universe are placeholder text.</p>
+          <p><a class="btn" href="#">See House »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 160px; height: 160px;" src="http://o.homedsgn.com/wp-content/uploads/2011/04/Peregian-Beach-House-01-140x140.jpg">
+          <h2>Party House</h2>
+          <p>This is placeholder text.  I am aware that it is placeholder text but I feel as though I am less conflicted about the fact that it is than I thought I would be.  All things in the universe are placeholder text.</p>
+          <p><a class="btn" href="#">See House »</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+    </div>
