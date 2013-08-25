@@ -61,3 +61,23 @@ body{
 .description {
   margin: 10px 0 5px;
 }
+
+.carousel-inner {
+  display: block;
+  line-height: 1;
+}
+
+.mycarousel {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+-ms-interpolation-mode: bicubic;
+}
+
+.lead {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-family: Lato;
+}
