@@ -63,14 +63,15 @@ body{
 }
 
 .carousel-inner {
-  display: block;
-  line-height: 1;
+position: relative;
+width: 100%;
+overflow: hidden;
 }
 
 .mycarousel {
   width: auto;
   height: auto;
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
   border: 0;
 -ms-interpolation-mode: bicubic;
@@ -80,4 +81,26 @@ body{
   padding-top: 5px;
   padding-bottom: 15px;
   font-family: Lato;
+}
+
+.background_image {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  .background_image {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }
